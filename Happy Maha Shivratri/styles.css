@@ -1,0 +1,70 @@
+/* Google Font for Stylish Text */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Zilla+Slab:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(120deg, #000428, #004e92);
+    color: white;
+    overflow: hidden;
+}
+
+/* Glowing Text Effect */
+.glow-text {
+    font-size: 3rem;
+    font-family: 'Zilla Slab', serif;
+    text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff1493;
+    animation: glow 2s infinite alternate;
+}
+
+/* Subheading Styling */
+.subtitle {
+    font-size: 1.2rem;
+    color: #ffe66d;
+}
+
+/* Om Symbol Floating Animation */
+.floating-om {
+    font-size: 80px;
+    color: #ffcc00;
+    text-shadow: 0 0 20px #ffcc00, 0 0 40px #ff9900;
+    display: inline-block;
+    animation: floatOm 3s infinite ease-in-out;
+}
+
+/* Shivling Image with Colorful Glow Animation */
+.shivling {
+    width: 240px;
+    margin-top: 40px;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.7));
+    animation: glowShivling 4s infinite alternate, floatShivling 3s infinite ease-in-out;
+}
+
+/* Keyframes for glowing text effect */
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7; }
+    100% { text-shadow: 0 0 20px #ff1493, 0 0 30px #ff1493; }
+}
+
+/* Floating effect for Om symbol */
+@keyframes floatOm {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -20px); }
+}
+
+/* Shivling Glow Animation */
+@keyframes glowShivling {
+    0% { filter: drop-shadow(0 0 10px #ff0000); }
+    25% { filter: drop-shadow(0 0 15px #ff9900); }
+    50% { filter: drop-shadow(0 0 20px #ffff00); }
+    75% { filter: drop-shadow(0 0 15px #00ff00); }
+    100% { filter: drop-shadow(0 0 10px #00ffff); }
+}
+
+/* Floating Shivling Effect */
+@keyframes floatShivling {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
